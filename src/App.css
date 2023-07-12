@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height:65px;
+  background-image: linear-gradient(to right, #672280, #A626D3);
+  color: white;
+  padding: 20px;
+}
+
+.nav--logo {
+  height: 100%;
+  margin-right: 6px;
+}
+
+
+.nav--title {
+  font-size: 1.25em;
+  margin-right: auto;
+}
+
+.nav--text {
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  padding: 2em;
+}
+
+.input-box {
+  border: 1px solid #d5d4d8;
+  border-radius: 0.19em;
+  text-indent: 5px;
+}
+
+.form--btn {
+  grid-column: 1 / -1;
+  background: linear-gradient(90deg, #711f8d, #a818da 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0.19em;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.meme--image {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.top-text {
+  top:0;
+}
+
+.bottom-text {
+  bottom:0;
+}
